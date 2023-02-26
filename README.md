@@ -20,3 +20,13 @@ Installations Needed
 2. Note Version should increment with new files V1,V2,V3...
 3. See more details in file Naming here(https://flywaydb.org/documentation/concepts/migrations.html#naming)
 
+#Crud Flow
+1. Create Category `curl --location 'http://localhost:8080/api/v1/category' \
+   --header 'Content-Type: application/json' \
+   --data '{
+   "name": "Apartment",
+   "description": "Rental Apartment Blocks"
+   }'` ![img_3.png](img_3.png)
+2. Get Category By id `curl --location 'http://localhost:8080/api/v1/category/1'` ![img_2.png](img_2.png)
+3. Get All Categories `curl --location 'http://localhost:8080/api/v1/categories'` ![img_1.png](img_1.png)
+
